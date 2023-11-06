@@ -1,0 +1,5 @@
+Original: 
+Hello from Text file
+ Double Original: 
+Hello from Text file
+Hello from Text file
