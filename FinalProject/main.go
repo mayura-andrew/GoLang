@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"net/http"
 	"text/template"
+
+	"github.com/mayura-andrew/GoLang/FinalProject/data"
 )
 
 func handleHello(w http.ResponseWriter, r *http.Request) {
@@ -16,7 +18,7 @@ func handleTemplate(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("Internal Server Error"))
 		return
 	}
-	html.Execute(w, "<h3>Test</h3>")
+	html.Execute(w, data.GetAll())
 }
 func main() {
 	server := http.NewServeMux()
@@ -28,4 +30,5 @@ func main() {
 	if err == nil {
 		fmt.Println("Error while opening the server")
 	}
+
 }
