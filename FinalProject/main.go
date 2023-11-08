@@ -5,6 +5,7 @@ import (
 	"net/http"
 	"text/template"
 
+	"github.com/mayura-andrew/GoLang/FinalProject/api"
 	"github.com/mayura-andrew/GoLang/FinalProject/data"
 )
 
@@ -24,6 +25,8 @@ func main() {
 	server := http.NewServeMux()
 	server.HandleFunc("/hello", handleHello)
 	server.HandleFunc("/template", handleTemplate)
+	server.HandleFunc("/api/exhibitions", api.Get)
+	server.HandleFunc("/api/exhibitions/new", api.Post)
 	fs := http.FileServer(http.Dir("./public"))
 	server.Handle("/", fs)
 	err := http.ListenAndServe(":3333", server)
