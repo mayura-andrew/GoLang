@@ -1,1 +1,1 @@
-# GoLang
+# GoLang - A self earning material
