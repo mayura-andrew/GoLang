@@ -1,5 +1,8 @@
 # GoLang - A self earning material
+<<<<<<< HEAD
 
+=======
+>>>>>>> b6ef43585d7eaa3fe3935db0895e6a6f5b0ea688
 .## Basics of Go
 
 - Go, also known as Golang, is an open-source programming language developed by Google in 2007. It is designed to be efficient, reliable, and scalable, with a focus on simplicity and ease of use[6].
