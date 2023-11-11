@@ -2,10 +2,10 @@ package api
 
 import (
 	"encoding/json"
+	"errors"
 	"fmt"
 	"io"
 	"net/http"
-	"strings"
 
 	"github.com/mayura-andrew/GoLang/CRYTPOMASTERS/datatypes"
 )
@@ -13,8 +13,10 @@ import (
 const apiUrl = "https://cex.io/api/ticker/%s/USD"
 
 func GetRate(currency string) (*datatypes.Rate, error){
-	upCurrency := strings.ToUpper(currency)
-	res, err := http.Get(fmt.Sprintf(apiUrl, upCurrency))
+	if len(currency) == 0 {
+		return nil, errors.New("curreny empty")
+	}
+	res, err := http.Get(fmt.Sprintf(apiUrl, currency))
 	if err != nil {
 		return nil, err
 	}
