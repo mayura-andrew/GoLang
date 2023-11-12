@@ -26,7 +26,7 @@ func Swap(arr []int, i int){
 	arr[i], arr[i+1] = arr[i+1], arr[i]
 }
 
-func main(){
+func mainBubble(){
 	fmt.Println("Enter a sequence of up to 10 integers, separated by spaces :")
 	reader := bufio.NewReader(os.Stdin)
 	input, _ := reader.ReadString('\n')
