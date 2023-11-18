@@ -1,6 +1,10 @@
-go 1.21.3
+go 1.21.4
 
 use (
 	./FinalProject
 	./GoYT/src
+	./youtubeGO/09Module
+	./youtubeGO/11APIWEB
+	./youtubeGO/12MongoDB
+	./youtubeGO/MongoDBAPI
 )
