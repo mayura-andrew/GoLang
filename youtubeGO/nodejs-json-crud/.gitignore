@@ -1,0 +1,53 @@
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+/bin/
+/_test/
+
+*.log
+*.pot
+*.out
+
+/vendor/
+/Godeps/
+/go.sum
+
+.idea/
+.vscode/
+
+.env
+main
+
+# Node.js
+/node_modules/
+
+# User-specific files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Compiled binaries for Node.js native addons
+/build/
+
+# Dependency directories for Node.js
+/jspm_packages/
+/bower_components/
+
+# TypeScript
+*.tsbuildinfo
+
+# Optional: Add your frontend build output directory if needed
+/dist/
+/public/bundle.js
+
+# Optional: Exclude specific Node.js configuration files if needed
+/.npmrc
+/.yarnrc
+
+# Optional: Exclude specific frontend configuration files if needed
+/package-lock.json
+/yarn.lock
