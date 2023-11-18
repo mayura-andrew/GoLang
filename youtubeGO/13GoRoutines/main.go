@@ -7,7 +7,7 @@ import (
 
 
 func main(){
-	ggreeter("Hello")
+	go greeter("Hello")
 	greeter("world")
 }
 

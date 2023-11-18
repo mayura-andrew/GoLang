@@ -11,7 +11,7 @@ import (
 )
 
 
-const conntectionString = "mongodb+srv://mayuraalahakoon:@ndr0@z5MongoDB@goapi.olzcyw1.mongodb.net/?retryWrites=true&w=majority"
+const conntectionString = "#"
 const dbName = "netflix"
 const colName = "watchlist"
 
